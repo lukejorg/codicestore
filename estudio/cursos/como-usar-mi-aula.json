@@ -1,0 +1,69 @@
+{
+  "id": "como-usar-mi-aula",
+  "titulo": "Cómo usar Mi Aula",
+  "categoria": "Guía",
+  "autor": "Mi Aula",
+  "descripcion": "Curso de ejemplo que muestra todos los tipos de lección: texto, video, tarjetas y cuestionario. Úsalo como plantilla para crear los tuyos.",
+  "modulos": [
+    {
+      "titulo": "Primeros pasos",
+      "lecciones": [
+        {
+          "id": "bienvenida",
+          "titulo": "Bienvenida",
+          "duracion": "3 min",
+          "contenido": "## ¿Qué es Mi Aula?\n\nUna herramienta para **estudiar a tu ritmo**:\n\n- Cargas uno o varios cursos.\n- Avanzas lección por lección.\n- Marcas lo que completaste y ves tu progreso.\n- Tomas notas dentro de cada lección.\n\n> Tu avance se guarda automáticamente en este navegador.\n\nPulsa **✓ Marcar como completada** para pasar a la siguiente lección."
+        },
+        {
+          "id": "video",
+          "titulo": "Lecciones con video",
+          "tipo": "video",
+          "duracion": "5 min",
+          "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+          "contenido": "Una lección puede incluir un video de **YouTube**, **Vimeo** o un archivo `.mp4`. Solo agrega el campo `\"video\"` con el enlace.\n\nDebajo del video puedes seguir escribiendo texto en Markdown."
+        }
+      ]
+    },
+    {
+      "titulo": "Repasar y evaluarte",
+      "lecciones": [
+        {
+          "id": "tarjetas",
+          "titulo": "Tarjetas de repaso",
+          "tipo": "tarjetas",
+          "contenido": "Las tarjetas sirven para memorizar conceptos. Toca una para ver la respuesta.",
+          "tarjetas": [
+            { "frente": "¿Dónde se guarda mi avance?", "reverso": "En el navegador (localStorage). Usa «Descargar avance» para respaldarlo." },
+            { "frente": "¿Qué formato tienen los cursos?", "reverso": "Un archivo JSON con módulos y lecciones." },
+            { "frente": "¿Puedo tener varios cursos?", "reverso": "Sí, carga tantos como quieras." }
+          ]
+        },
+        {
+          "id": "cuestionario",
+          "titulo": "Cuestionario final",
+          "tipo": "quiz",
+          "contenido": "Responde para comprobar lo aprendido. Se aprueba con **70%** y la lección se marca sola.",
+          "preguntas": [
+            {
+              "pregunta": "¿Cómo se marca como completada una lección de cuestionario?",
+              "opciones": ["Manualmente", "Al aprobar el cuestionario", "Nunca"],
+              "correcta": 1,
+              "explicacion": "Los cuestionarios se completan automáticamente al alcanzar el 70%."
+            },
+            {
+              "pregunta": "¿Qué campo agrega un video a una lección?",
+              "opciones": ["\"video\"", "\"youtube\"", "\"media\""],
+              "correcta": 0
+            },
+            {
+              "pregunta": "¿Cómo pasas tu avance a otro dispositivo?",
+              "opciones": ["Se sincroniza solo", "Con «Descargar avance» y «Restaurar avance»", "No se puede"],
+              "correcta": 1,
+              "explicacion": "Está en la sección Progreso → Copia de seguridad."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
